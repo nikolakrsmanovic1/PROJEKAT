@@ -51,12 +51,13 @@ INSERT INTO `ekipe` (`ime_ekipe`, `grad`, `trener`, `registracioni_broj`, `lozin
 -- Table structure for table `komentari`
 --
 
+
 CREATE TABLE `komentari` (
   `opis` varchar(50) NOT NULL,
   `imeKreatora` varchar(30) NOT NULL,
-  `utakmica_id` int(2) NOT NULL
+  `utakmica_id` int(2) NOT NULL,
+  `datum` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 -- --------------------------------------------------------
 
 --
